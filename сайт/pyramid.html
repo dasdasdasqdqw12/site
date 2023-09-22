@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title> </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+  <body>
+
+    <div id="navbar">
+      <header class="bg-black-90 w-100 ph3 pv3 pv4-ns ph4-m ph5-l">
+        <nav class="f6 fw6 ttu tracked">
+          <a class="link dim white dib mr3" href="Site.html" title="Home">Главная</a>
+          <a class="dim white dib mr3" style="cursor: pointer" onclick="openframe()">Фреймворки</a>
+          <a class="right-align dim white dib mr3" style="cursor: pointer" onclick="openNav()">Навигация</a>
+        </nav>
+      </header> 
+    </div>
+
+    <div id="myfrnav" class="frnav">
+        <a href="javascript:void(0)" class="closebtn esc" id="closeesc" onclick="closeframe()">×</a>
+        <div class="overlay-content-fr f6 fw6 ttu tracked selector">
+          <a href="django.html">Django</a>
+          <a href="pyramid.html">Pyramid</a>
+          <a href="flask.html">Flask</a>
+          <a href="bottle.html">Bottle</a>
+          <a href="tornado.html">Tornado</a>
+          <a href="web2py.html">Web2Py</a>
+          <a href="turbogears.html">TurboGears</a>
+        </div>
+      </div>
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn esc" id="closeesc" onclick="closeNav()">×</a>
+      <div class="overlay-contentD f6 fw6 ttu tracked selector">
+        <a href="#h1">Описание</a>
+        <a href="#h2">Особенности</a>
+        <a href="#h3">Преимущества</a>
+        <a href="#h4">Недостатки</a>
+        <a href="#h5">Где используется</a>
+      </div>
+    </div>
+
+    <article>
+        <header class="bg-red sans-serif">
+          <div class="mw9 center pa88 pt5-ns ph7-l text-center">
+            <h3 class="f2 f1-m f-headline-l measure-narrow lh-title mv0">
+              <span class="bg-black-90 lh-copy white pa1 tracked-tight">
+                Pyramid
+              </span>
+            </h3>
+          </div>
+        </header>
+      </article>
+
+      <main>
+        <div class="pa4 ph7-l georgia mw9-l center">
+            <p id="h1" class="zag georgia center measure">Описание</p>
+            <p class="simptext">Набирающий популярность фреймворк Pyramid универсален. Его можно использовать для проектов любого уровня сложности. Он заслужил высокие оценки в среде Python-разработчиков благодаря своей прозрачности и проверенной временем надёжности. Его используют такие технологические гиганты, как Mozilla, Yelp, Dropbox и SurveyMonkey.</p>
+            <p class="simptext">Pyramid — это золотая середина между мегафреймворками и минифреймворками. Этот фреймворк в самом начале работы над проектом может быть микрофреймворком, а по мере роста даст всё необходимое на каждом этапе, чтобы довести проект до успешного завершения.</p>
+       
+            <p id="h2" class="zag georgia center measure">Особенности</p>
+            <p class="simptext"><b>Отсутствие навязывания своей структуры или компонентов:</b> предоставляет возможность выбирать и подключать нужные элементы</p>
+            <p class="simptext"><b>Встроенные средства для аутентификации пользователей:</b> регистрация, аутентификация и возможность смены пароля</p>
+            <p class="simptext"><b>Удобство навигации</b> гибкая система маршрутизации URL-адресов, что позволяет настроить адреса для разных частей веб-приложения</p>
+
+            <p id="h3" class="zag georgia center measure">Преимущества</p>
+            <p class="simptext"><b>Работа с разнообразными базами данных:</b> PostgreSQL, MySQL, SQLite и MongoDB</p>
+            <p class="simptext"><b>Поддержка различных ORM:</b> SQLAlchemy, Peewee и MongoEngine</p>
+            <p class="simptext"><b>Взаимодействие с серверами:</b> Apache, Nginx и Gunicorn, Pyramid</p>
+            <p class="simptext"><b>Поддержка различных движков шаблонов:</b> благодаря Jinja2, Mako и Chameleon, можно генерировать HTML-страницы по своему усмотрению</p>
+            <p class="simptext"><b>Поддержка интернационализации: </b> наличие системы переводов и локализации для создания многоязычных приложений.</p>
+
+            <p id="h4" class="zag georgia center measure">Недостатки</p>
+            <p class="simptext">Маленькое сообщество</p>
+            <p class="simptext">Не лучше Django, но имеет меньше функционала</p>
+            <p class="simptext">Мало вакансий, где нужно Pyramid использовать.</p>
+
+            <p id="h5" class="zag georgia center measure">Где используется</p>
+            <p class="simptext"><b>Dropbox</b> — одна из самых популярных платформ для хранения и синхронизации файлов в облаке, использует Pyramid для своих веб-интерфейсов и некоторых внутренних инструментов.</p>
+            <p class="simptext"><b>Mozilla</b> — организация, известная своим вкладом в разработку браузера Firefox и других проектов с открытым исходным кодом, использует Pyramid для некоторых своих веб-сервисов и панелей управления.</p>
+            <p class="simptext"><b>SurveyMonkey</b> — платформа для создания и проведения онлайн-опросов. Pyramid обеспечивает производительность и масштабируемость, необходимые для обработки большого количества данных и обслуживания миллионов пользователей.</p>
+            <p class="simptext"><b>Ticketmaster</b> — международная компания по продаже билетов на различные мероприятия. Она использует Pyramid для своих веб-сервисов и платформы электронной коммерции, позволяя Ticketmaster создавать пользовательские интерфейсы и интегрировать их с различными сторонними сервисами и платежными системами.</p>
+
+        </div>
+      </main>
+
+      <footer class="bg-near-black1 white-801 pv51 pv61-l ph41">
+        <p class="f61"><span class="dib1 mr41 mr51-ns">©2048 Your Company LLC, Inc.</span>
+          <a class="link1 white-801 hover-light-purple1" href="/terms">Terms</a> /
+          <a class="link1 white-801 hover-gold1" href="/privacy"> Privacy </a> /
+          <a class="link1 white-801 hover-green1" href="#">hi@yourcompany.com </a>
+        </p>
+      </footer>
+
+  </body>
+</html>

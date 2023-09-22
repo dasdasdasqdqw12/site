@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title> </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+  <body>
+
+    <div id="navbar">
+      <header class="bg-black-90 w-100 ph3 pv3 pv4-ns ph4-m ph5-l">
+        <nav class="f6 fw6 ttu tracked">
+          <a class="link dim white dib mr3" href="Site.html" title="Home">Главная</a>
+          <a class="dim white dib mr3" style="cursor: pointer" onclick="openframe()">Фреймворки</a>
+          <a class="right-align dim white dib mr3" style="cursor: pointer" onclick="openNav()">Навигация</a>
+        </nav>
+      </header> 
+    </div>
+
+    <div id="myfrnav" class="frnav">
+        <a href="javascript:void(0)" class="closebtn esc" id="closeesc" onclick="closeframe()">×</a>
+        <div class="overlay-content-fr f6 fw6 ttu tracked selector">
+          <a href="django.html">Django</a>
+          <a href="pyramid.html">Pyramid</a>
+          <a href="flask.html">Flask</a>
+          <a href="bottle.html">Bottle</a>
+          <a href="tornado.html">Tornado</a>
+          <a href="web2py.html">Web2Py</a>
+          <a href="turbogears.html">TurboGears</a>
+        </div>
+      </div>
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn esc" id="closeesc" onclick="closeNav()">×</a>
+      <div class="overlay-contentD f6 fw6 ttu tracked selector">
+        <a href="#h1">Описание</a>
+        <a href="#h2">Особенности</a>
+        <a href="#h3">Преимущества</a>
+        <a href="#h4">Недостатки</a>
+        <a href="#h5">Где используется</a>
+      </div>
+    </div>
+
+    <article>
+        <header class="bg-web2py sans-serif">
+          <div class="mw9 center pa88 pt5-ns ph7-l text-center">
+            <h3 class="f2 f1-m f-headline-l measure-narrow lh-title mv0">
+              <span class="bg-black-90 lh-copy white pa1 tracked-tight">
+                Web2Py
+              </span>
+            </h3>
+          </div>
+        </header>
+      </article>
+
+      <main>
+        <div class="pa4 ph7-l georgia mw9-l center">
+            <p id="h1" class="zag georgia center measure">Описание</p>
+            <p class="simptext">Фреймворк Web2py изначально задумывался как учебный инструмент с акцентом на юзабилити и простоте начала использования. Например, в нём отсутствуют файлы конфигурации проекта. Сама же архитектура фреймворка разработана по аналогии с такими решениями, как Ruby on Rails и Django.</p>
+            <p class="simptext">Весь процесс разработки, отладки, тестирования, а также администрирование удалённой базы данных можно организовать без каких-либо сторонних инструментов через собственный веб-интерфейс, который в свою очередь тоже является web2py-приложением.</p>
+
+            <p id="h2" class="zag georgia center measure">Особенности</p>
+            <p class="simptext">Механизмы аутентификации и контроля доступа по ролям</p>
+            <p class="simptext">Поддержка интернационализации</p>
+            <p class="simptext">Автоматическое журналирование ошибок вместе с контекстом.</p>
+
+            <p id="h3" class="zag georgia center measure">Преимущества</p>
+            <p class="simptext"><b>Предлагает готовые решения для типовых задач:</b> это обеспечивает экономию времени и повышение эффективности кода.</p>
+            <p class="simptext"><b>Для его работы не требуется специальной установки или настройки:</b> он даже может запускаться с USB-накопителя.</p>
+            <p class="simptext"><b>Web2py бесплатен и распространяется с открытым исходным кодом:</b> проект поддерживается большим сообществом разработчиков.</p>
+            <p class="simptext"><b>Поддерживает разработку API и RESTful сервисов:</b> с использованием различных форматов данных.</p>
+
+            <p id="h4" class="zag georgia center measure">Недостатки</p>
+            <p class="simptext">Из-за своей простоты недостаточно гибкий для сложных и специализированных приложений</p>
+            <p class="simptext">Несовместим с некоторыми технологиями или фреймворками.</p>
+
+            <p id="h5" class="zag georgia center measure">Где используется</p>
+            <p class="simptext">Веб-сайты и веб-приложения разной сложности</p>
+            <p class="simptext">Проекты малого и среднего масштаба.</p>
+
+        </div>
+      </main>
+
+      <footer class="bg-near-black1 white-801 pv51 pv61-l ph41">
+        <p class="f61"><span class="dib1 mr41 mr51-ns">©2048 Your Company LLC, Inc.</span>
+          <a class="link1 white-801 hover-light-purple1" href="/terms">Terms</a> /
+          <a class="link1 white-801 hover-gold1" href="/privacy"> Privacy </a> /
+          <a class="link1 white-801 hover-green1" href="#">hi@yourcompany.com </a>
+        </p>
+      </footer>
+
+  </body>
+</html>

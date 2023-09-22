@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title> </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+  <body>
+
+    <div id="navbar">
+      <header class="bg-black-90 w-100 ph3 pv3 pv4-ns ph4-m ph5-l">
+        <nav class="f6 fw6 ttu tracked">
+          <a class="link dim white dib mr3" href="Site.html" title="Home">Главная</a>
+          <a class="dim white dib mr3" style="cursor: pointer" onclick="openframe()">Фреймворки</a>
+          <a class="right-align dim white dib mr3" style="cursor: pointer" onclick="openNav()">Навигация</a>
+        </nav>
+      </header> 
+    </div>
+
+    <div id="myfrnav" class="frnav">
+        <a href="javascript:void(0)" class="closebtn esc" id="closeesc" onclick="closeframe()">×</a>
+        <div class="overlay-content-fr f6 fw6 ttu tracked selector">
+          <a href="django.html">Django</a>
+          <a href="pyramid.html">Pyramid</a>
+          <a href="flask.html">Flask</a>
+          <a href="bottle.html">Bottle</a>
+          <a href="tornado.html">Tornado</a>
+          <a href="web2py.html">Web2Py</a>
+          <a href="turbogears.html">TurboGears</a>
+        </div>
+      </div>
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn esc" id="closeesc" onclick="closeNav()">×</a>
+      <div class="overlay-contentD f6 fw6 ttu tracked selector">
+        <a href="#h1">Описание</a>
+        <a href="#h2">Особенности</a>
+        <a href="#h3">Преимущества</a>
+        <a href="#h4">Недостатки</a>
+        <a href="#h5">Где используется</a>
+      </div>
+    </div>
+
+    <article>
+        <header class="bg-tornado-clr sans-serif">
+          <div class="mw9 center pa88 pt5-ns ph7-l text-center">
+            <h3 class="f2 f1-m f-headline-l measure-narrow lh-title mv0">
+              <span class="bg-black-90 lh-copy white pa1 tracked-tight">
+                Tornado
+              </span>
+            </h3>
+          </div>
+        </header>
+      </article>
+
+      <main>
+        <div class="pa4 ph7-l georgia mw9-l center">
+            <p id="h1" class="zag georgia center measure">Описание</p>
+            <p class="simptext">Tornado — это расширяемый асинхронный веб-сервер и фреймворк, который решает проблему C10k. То есть при правильной настройке он может работать с 10 000+ одновременных соединений. Это делает его отличным инструментом для создания приложений, требующих суперпроизводительности при работе с операциями ввода/вывода и поддержки огромного количества одновременных соединений.</p>
+            <p class="simptext">Изначально фреймворк был создан для использования в проекте FriendFeed, который в 2009 году приобрела компания Facebook, после чего исходные коды Tornado были открыты.</p>
+
+            <p id="h2" class="zag georgia center measure">Особенности</p>
+            <p class="simptext">Асинхронный режим работы</p>
+            <p class="simptext">Использование веб-сокетов</p>
+            <p class="simptext">Поддержка схем аутентификации и авторизации сторонних производителей.</p>
+
+            <p id="h3" class="zag georgia center measure">Преимущества</p>
+            <p class="simptext">Может масштабироваться до десятых тысяч открытых соединений, что достигается с помощью неблокирующего ввода-вывода</p>
+            <p class="simptext">Позволяет работать с базами данных через сторонние библиотеки</p>
+            <p class="simptext">Поддерживает разные веб-серверы и предлагает утилиты для работы с HTTP-метаданными</p>
+            <p class="simptext">Обладает высокой производительностью и масштабируемостью, гибкостью и модульностью</p>
+            <p class="simptext">Бесплатен и имеет открытый код</p>
+            <p class="simptext">Поддерживается большим сообществом разработчиков.</p>
+
+            <p id="h4" class="zag georgia center measure">Недостатки</p>
+            <p class="simptext">Сложный для начинающих из-за асинхронности и потенциальных проблем совместимости из-за интеграции с asyncio.</p>
+
+            <p id="h5" class="zag georgia center measure">Где используется</p>
+            <p class="simptext">Используется в создании веб-приложений с большой нагрузкой, включая Facebook и API для Twitter.</p>
+
+        </div>
+      </main>
+
+      <footer class="bg-near-black1 white-801 pv51 pv61-l ph41">
+        <p class="f61"><span class="dib1 mr41 mr51-ns">©2048 Your Company LLC, Inc.</span>
+          <a class="link1 white-801 hover-light-purple1" href="/terms">Terms</a> /
+          <a class="link1 white-801 hover-gold1" href="/privacy"> Privacy </a> /
+          <a class="link1 white-801 hover-green1" href="#">hi@yourcompany.com </a>
+        </p>
+      </footer>
+
+  </body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title> </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+  <body>
+
+    <div id="navbar">
+      <header class="bg-black-90 w-100 ph3 pv3 pv4-ns ph4-m ph5-l">
+        <nav class="f6 fw6 ttu tracked">
+          <a class="link dim white dib mr3" href="Site.html" title="Home">Главная</a>
+          <a class="dim white dib mr3" style="cursor: pointer" onclick="openframe()">Фреймворки</a>
+          <a class="right-align dim white dib mr3" style="cursor: pointer" onclick="openNav()">Навигация</a>
+        </nav>
+      </header> 
+    </div>
+
+    <div id="myfrnav" class="frnav">
+        <a href="javascript:void(0)" class="closebtn esc" id="closeesc" onclick="closeframe()">×</a>
+        <div class="overlay-content-fr f6 fw6 ttu tracked selector">
+          <a href="django.html">Django</a>
+          <a href="pyramid.html">Pyramid</a>
+          <a href="flask.html">Flask</a>
+          <a href="bottle.html">Bottle</a>
+          <a href="tornado.html">Tornado</a>
+          <a href="web2py.html">Web2Py</a>
+          <a href="turbogears.html">TurboGears</a>
+        </div>
+      </div>
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn esc" id="closeesc" onclick="closeNav()">×</a>
+      <div class="overlay-contentD f6 fw6 ttu tracked selector">
+        <a href="#h1">Описание</a>
+        <a href="#h2">Особенности</a>
+        <a href="#h3">Преимущества</a>
+        <a href="#h4">Недостатки</a>
+        <a href="#h5">Где используется</a>
+      </div>
+    </div>
+
+    <article>
+        <header class="bg-tg sans-serif">
+          <div class="mw9 center pa88 pt5-ns ph7-l text-center">
+            <h3 class="f2 f1-m f-headline-l measure-narrow lh-title mv0">
+              <span class="bg-black-90 lh-copy white pa1 tracked-tight">
+                TurboGears
+              </span>
+            </h3>
+          </div>
+        </header>
+      </article>
+
+      <main>
+        <div class="pa4 ph7-l georgia mw9-l center">
+            <p id="h1" class="zag georgia center measure">Описание</p>
+            <p class="simptext">TurboGears — это ещё один веб-фреймворк для разработки веб-приложений, написанный на языке Python. Во время его создания вдохновение черпалось из опыта использования Django и Rails. Эти фреймворки имеют ряд ограничений и недостатков, а TurboGears попытался решить эти проблемы.</p>
+            <p class="simptext">Основное отличие этого фреймворка от того же Django — не изобретение велосипеда в виде собственной ORM, а использование в качестве основных компонент стандартных и популярных библиотек, таких как Pylons, SQLAlchemy, Genshi и Repoze.</p>
+
+            <p id="h2" class="zag georgia center measure">Особенности</p>
+            <p class="simptext"><b>Маршрутизация:</b> позволяет определять URL-адреса для различных частей приложения с помощью декоратора @expose, который указывает, какие методы класса доступны для HTTP-запросов и какой шаблон использовать для генерации ответа.</p>
+            <p class="simptext"><b>Шаблонизация:</b> поддерживает различные шаблонизаторы, такие как Kajiki, Genshi, Mako или Jinja2. Шаблонизаторы позволяют генерировать HTML-страницы с помощью специальных тегов и фильтров.</p>
+            <p class="simptext"><b>Работа с базами данных:</b> поддерживает работу с различными базами данных с помощью ORM SQLAlchemy или Ming для MongoDB. ORM позволяют работать с данными на уровне объектов Python, а не на уровне SQL-запросов.</p>
+            <p class="simptext"><b>Поддержка веб-серверов:</b> может работать с различными веб-серверами, такими как Apache, Nginx, Gunicorn. TurboGears также имеет свой собственный встроенный веб-сервер для разработки и тестирования.</p>
+            <p class="simptext"><b>Утилиты:</b> предоставляет удобный доступ к данным формы, загрузке файлов, куки, заголовкам и другим HTTP-связанным метаданным. Плюс имеет встроенные инструменты для кэширования, кодирования, сессий, аутентификации и статического контента.</p>
+            <p class="simptext"><b>Расширяемость:</b> позволяет использовать расширения для добавления нового функционала или интеграции с другими технологиями. Например, можно использовать расширения для работы с веб-сокетами, RESTful API и OAuth.</p>
+
+            <p id="h3" class="zag georgia center measure">Преимущества</p>
+            <p class="simptext"><b>Гибкость и модульность:</b> позволяет выбирать и подключать нужные компоненты и технологии для своего проекта</p>
+            <p class="simptext"><b>Два режима работы:</b> минимальный и полноценный, что позволяет адаптироваться к разным потребностям и сложности приложений</p>
+            <p class="simptext"><b>Бесплатный и имеет открытый исходный код:</b> имеет большое и активное сообщество разработчиков, которые поддерживают и обновляют фреймворк.</p>
+
+            <p id="h4" class="zag georgia center measure">Недостатки</p>
+            <p class="simptext">Сложный для начинающих разработчиков</p>
+            <p class="simptext">Из-за расширяемости несовместим с некоторыми технологиями или фреймворками, которые используют другие подходы или стандарты.</p>
+
+            <p id="h5" class="zag georgia center measure">Где используется</p>
+            <p class="simptext">В создании веб-сайтов или веб-приложений различной тематики и сложности. Фреймворк подходит для проектов среднего и большого размера и масштаба (например, на нем создан сайт SourceForge)</p>
+            <p class="simptext">В разработке API или RESTful сервисов, которые обмениваются данными с другими приложениями по сети (например, на нем создан API для Reddit).</p>
+
+        </div>
+      </main>
+
+      <footer class="bg-near-black1 white-801 pv51 pv61-l ph41">
+        <p class="f61"><span class="dib1 mr41 mr51-ns">©2048 Your Company LLC, Inc.</span>
+          <a class="link1 white-801 hover-light-purple1" href="/terms">Terms</a> /
+          <a class="link1 white-801 hover-gold1" href="/privacy"> Privacy </a> /
+          <a class="link1 white-801 hover-green1" href="#">hi@yourcompany.com </a>
+        </p>
+      </footer>
+
+  </body>
+</html>

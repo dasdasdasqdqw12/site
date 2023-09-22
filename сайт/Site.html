@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title> </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+  <body>
+
+    <div id="navbar">
+      <header class="bg-black-90 w-100 ph3 pv3 pv4-ns ph4-m ph5-l">
+        <nav class="f6 fw6 ttu tracked">
+          <a class="link dim white dib mr3" href="Site.html" title="Home">Главная</a>
+          <a class="dim white dib mr3" style="cursor: pointer" onclick="openframe()">Фреймворки</a>
+          <a class="right-align dim white dib mr3" style="cursor: pointer" onclick="openNav()">Навигация</a>
+        </nav>
+      </header> 
+    </div>
+
+    <div id="myfrnav" class="frnav">
+      <a href="javascript:void(0)" class="closebtn esc" onclick="closeframe()">×</a>
+      <div class="overlay-content-fr f6 fw6 ttu tracked selector">
+        <a href="django.html">Django</a>
+        <a href="pyramid.html">Pyramid</a>
+        <a href="flask.html">Flask</a>
+        <a href="bottle.html">Bottle</a>
+        <a href="tornado.html">Tornado</a>
+        <a href="web2py.html">Web2Py</a>
+        <a href="turbogears.html">TurboGears</a>
+      </div>
+    </div>
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn esc" onclick="closeNav()">×</a>
+      <div class="overlay-content f6 fw6 ttu tracked selector">
+        <a href="#h1">Про Python и фреймворки</a>
+        <a href="#h2">Python фреймворки</a>
+      </div>
+      <div class="overlay-content f4 fw4 ttu tracked selector">
+        <a href="#hh1">Django</a>
+        <a href="#hh2">Pyramid</a>
+        <a href="#hh3">Flask</a>
+        <a href="#hh4">Bottle</a>
+        <a href="#hh5">Tornado</a>
+        <a href="#hh6">Web2Py</a>
+        <a href="#hh7">TurboGears</a>
+      </div>
+    </div>
+
+      <article>
+        <header class="bg-gold sans-serif">
+          <div class="mw9 center pa4 pt5-ns ph7-l">
+            <h3 class="f2 f1-m f-headline-l measure-narrow lh-title mv0">
+              <span class="bg-black-90 lh-copy white pa1 tracked-tight">
+                Python фреймворки для web-разработки
+              </span>
+            </h3>
+            <h4 class="f3 fw1 georgia i">Руководство по миру Python-фреймворков для веб-разработки.</h4>
+          </div>
+        </header>
+      </article>
+
+      <main>
+        <div class="pa4 ph7-l georgia mw9-l center">
+            <p id="h1" class="zag georgia center measure">Про Python и фреймворки</p>
+            <p class="f5 f3-ns lh-copy measure georgia">
+              Python - это многоцелевой высокоуровневый язык программирования, который стал одним из наиболее популярных и востребованных языков в мире. Он известен своей чистотой и простотой синтаксиса, что делает его идеальным выбором как для начинающих программистов, так и опытных разработчиков.
+            </p>
+            <p class="f5 f3-ns lh-copy measure georgia">
+                Python также применяют в веб-разработке, чему способствуют различные фреймворки, которые представляют собой мощные инструменты, которые облегчают создание высококачественных веб-приложений. Они предоставляют разработчикам готовые решения и структуры, позволяющие сосредоточиться на логике приложения, минимизируя рутинную работу.
+            </p>
+            <p class="f5 f3-ns lh-copy measure georgia">
+              Возьмем несколько фремворков, рассмотрим их особенности, приемущества и недостатки, также узнаем, какие крупные компании ими пользуются.
+            </p>
+
+            <p id="h2" class="zag georgia center measure">
+              Python фреймворки
+            </p>
+            <p id="hh1" class="minizag georgia center measure">
+              Django
+            </p>
+            <a href="django.html" style="background-image: url(img/django.png); width: 640px; height: 360px;" class="link dt hide-child br4 cover bg-center">
+              <span class="white minizag georgia dtc v-mid child bg-black-40 pa5 text-center">
+                Django
+              </span>
+            </a>          
+            <p class="f5 f3-ns lh-copy measure georgia">
+              Один из самых известных и топовых фреймворков на языке Python. Он предоставляет все необходимые компоненты для создания полноценных веб-приложений любой сложности и масштаба.
+            </p>
+
+            <p id="hh2" class="minizag georgia center measure">Pyramid</p>
+            <a href="pyramid.html" style="background-image: url(img/Pyramid.png); width: 640px; height: 360px;" class="link dt hide-child br4 cover bg-center">
+              <span class="white minizag georgia dtc v-mid child bg-black-40 pa5 text-center">
+                Pyramid
+              </span>
+            </a>
+            <p class="simptext">Pyramid — это легковесный и гибкий веб-фреймворк, который позволяет разработчикам создавать приложения любого типа: от простых до сложных, от маленьких до больших. Он также следует шаблону проектирования MVC.</p>
+
+            <p id="hh3" class="minizag georgia center measure">Flask</p>
+            <a href="flask.html" style="background-image: url(img/flask.png); width: 640px; height: 360px;" class="link dt hide-child br4 cover bg-center">
+              <span class="white minizag georgia dtc v-mid child bg-black-40 pa5 text-center">
+                Flask
+              </span>
+            </a>
+            <p class="simptext">Flask — это микрофреймворк Python, основанный на инструментах Werkzeug и Jinja2. Его легкость и быстрота делают его привлекательным для разработчиков, ищущих простое решение с открытым исходным кодом.</p>
+       
+            <p id="hh4" class="minizag georgia center measure">Bottle</p>
+            <a href="bottle.html" style="background-image: url(img/botttle.png); width: 640px; height: 360px;" class="link dt hide-child br4 cover bg-center">
+              <span class="white minizag georgia dtc v-mid child bg-black-40 pa5 text-center">
+                Bottle
+              </span>
+            </a>
+            <p class="simptext">Bottle — это очень легкий фреймворк, написанный на языке Python. Он распространяется как один файловый модуль и не имеет никаких зависимостей, кроме стандартной библиотеки Python.</p>
+       
+            <p id="hh5" class="minizag georgia center measure">Tornado</p>
+            <a href="tornado.html" style="background-image: url(img/tornado.png); width: 640px; height: 360px;" class="link dt hide-child br4 cover bg-center">
+              <span class="white minizag georgia dtc v-mid child bg-black-40 pa5 text-center">
+                Tornado
+              </span>
+            </a>
+            <p class="simptext">Tornado — это веб-фреймворк и асинхронная сетевая библиотека, написанные на языке Python. Разработан в компании FriendFeed.</p>
+
+            <p id="hh6" class="minizag georgia center measure">Web2Py</p>
+            <a href="web2py.html" style="background-image: url(img/web2py.png); width: 640px; height: 360px;" class="link dt hide-child br4 cover bg-center">
+              <span class="white minizag georgia dtc v-mid child bg-black-40 pa5 text-center">
+                Web2Py
+              </span>
+            </a>
+            <p class="simptext">Web2py — это простой и удобный фреймворк, пригодный для разработчиков любого уровня.</p>
+
+            <p id="hh7" class="minizag georgia center measure">TurboGears</p>
+            <a href="turbogears.html" style="background-image: url(img/turbogears.png); width: 640px; height: 360px;" class="link dt hide-child br4 cover bg-center">
+              <span class="white minizag georgia dtc v-mid child bg-black-40 pa5 text-center">
+                TurboGears
+              </span>
+            </a>
+            <p class="simptext">TurboGears состоит из нескольких WSGI-компонентов, таких как WebOb, SQLAlchemy, Kajiki и Repoze. TurboGears позволяет создавать веб-приложения в двух режимах: минимальном и полноценном. В минимальном режиме можно создавать простые и лаконичные приложения с помощью одного файла Python. В полноценном режиме можно создавать сложные и масштабируемые приложения с помощью различных технологий и расширений.</p>
+
+          </div>
+      </main>
+
+      <footer class="bg-near-black1 white-801 pv51 pv61-l ph41">
+        <p class="f61"><span class="dib1 mr41 mr51-ns">©2048 Your Company LLC, Inc.</span>
+          <a class="link1 white-801 hover-light-purple1" href="/terms">Terms</a> /
+          <a class="link1 white-801 hover-gold1" href="/privacy"> Privacy </a> /
+          <a class="link1 white-801 hover-green1" href="#">hi@yourcompany.com </a>
+        </p>
+      </footer>
+      
+  </body>
+</html>
